@@ -11,7 +11,58 @@
 </head>
 
 <body>
+    <!--
+        nome apelido
+        rb sexo (masculino/feminino/outros)
+        email telefone
+        textarea observações
+        btns Cancelar Salvar
+    -->
 
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h3>FORMULÁRIO</h3><br>
+                <form action="#" method="post">
+                    <div class="row g-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apelido">
+                        </div>
+                    </div><br>
+                    <h4>Sexo</h4>
+                    <div class="form-check">
+                        <input type="radio" name="opcao1" id="a" class="form-check-input">
+                        <label for="a" class="form-check-label">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="opcao1" id="b" class="form-check-input">
+                        <label for="b" class="form-check-label">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="opcao1" id="c" class="form-check-input">
+                        <label for="c" class="form-check-label">Outros</label>
+                    </div><br>
+                    <div class="input-group input-group-inline mb-3 ">
+                        <span class="input-group-text">Email</span>
+                        <input type="text" class="form-control" placeholder="example@provedor.com">
+                        <span class="input-group-text">Tel</span>
+                        <input type="text" class="form-control" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Observações</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div><br>
+                    <div class="mb-3 text-end text-end-inline">
+                        <input type="submit" value="Cancelar" class="btn btn-danger">
+                        <input type="submit" value="Salvar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
